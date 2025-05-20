@@ -1,0 +1,487 @@
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Coronet', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+section {
+    padding: 60px 0;
+}
+
+h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.btn {
+    display: inline-block;
+    background-color: #333;
+    color: white;
+    padding: 12px 30px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+    border: none;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #555;
+}
+
+/* Announcement Bar */
+.announcement-bar {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+/* Header Styles */
+header {
+    background-color: white;
+    position: sticky; /* o relative/fixed */
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.main-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-categories {
+    display: flex;
+}
+
+.nav-categories li {
+    margin-right: 25px;
+}
+
+.nav-categories a {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.logo h1 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.nav-icons {
+    display: flex;
+}
+
+.nav-icons .icon {
+    margin-left: 15px;
+    font-size: 1.2rem;
+}
+
+.menu-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    width: 25px;
+    height: 2px;
+    background-color: #333;
+    margin-bottom: 5px;
+    transition: all 0.3s ease;
+}
+
+.hero {
+    height: 80vh;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #ededed; /* Color de respaldo si la imagen no carga */
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: var(--bg-image);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    opacity: 0.8; /* Puedes ajustar la opacidad según necesites */
+    z-index: 1;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    background-color: rgba(103, 103, 103, 0.057);
+    padding: 40px 60px;
+}
+
+.hero h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    letter-spacing: 3px;
+}
+
+/* Estilos responsivos para el hero */
+@media (max-width: 768px) {
+    .hero-content {
+        padding: 30px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-content {
+        padding: 20px;
+        width: 80%;
+    }
+}
+
+/* New Arrivals Section */
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.view-all {
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    position: relative;
+}
+
+.product-tag {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background-color: #333;
+    color: white;
+    padding: 5px 10px;
+    font-size: 0.7rem;
+    letter-spacing: 1px;
+}
+
+.product-image {
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+
+.product-image img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.product-card:hover .product-image img {
+    transform: scale(1.05);
+}
+
+.product-info {
+    margin-bottom: 15px;
+}
+
+.product-info h3 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+}
+
+.price {
+    font-weight: 600;
+}
+
+.whatsapp-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #000000;
+    color: white;
+    border: none;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+}
+
+.whatsapp-btn:hover {
+    background-color: #128C7E;
+}
+
+/* About Section */
+.about-content {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex: 1;
+}
+
+.about-text {
+    flex: 1;
+}
+
+.about-text h2 {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Contact Section */
+.contact {
+    background-color: #f9f9f9;
+}
+
+.contact-content {
+    display: flex;
+    gap: 50px;
+}
+
+.contact-info, .map {
+    flex: 1;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.social-media {
+    display: flex;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.social-icon {
+    display: inline-block;
+    padding: 8px 15px;
+    background-color: #333;
+    color: white;
+    font-size: 0.8rem;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #f9f9f9;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.footer-logo h2 {
+    font-size: 1.5rem;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 50px;
+}
+
+.footer-column h3 {
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.footer-column ul li {
+    margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+    font-size: 0.8rem;
+    color: #555;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+    font-size: 0.8rem;
+    color: #777;
+}
+
+/* Floating WhatsApp Button */
+.floating-whatsapp {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #25D366;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    z-index: 999;
+    transition: all 0.3s ease;
+}
+
+.floating-whatsapp:hover {
+    transform: scale(1.1);
+}
+
+.whatsapp-icon {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .about-content, .contact-content, .footer-content {
+        flex-direction: column;
+    }
+    
+    .about-image, .footer-logo {
+        margin-bottom: 30px;
+    }
+    
+    .footer-links {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex;
+    }
+    
+    .nav-categories, .nav-icons {
+        display: none;
+    }
+    
+    .main-nav {
+        justify-content: space-between;
+    }
+    
+    .hero-content {
+        padding: 30px;
+    }
+    
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+    
+    .products-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+    
+    .product-image img {
+        height: 300px;
+    }
+}
+
+@media (max-width: 576px) {
+    .products-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .hero-content {
+        padding: 20px;
+        width: 80%;
+    }
+    
+    .floating-whatsapp {
+        width: 45px;
+        height: 45px;
+        bottom: 20px;
+        right: 20px;
+    }
+    
+    .whatsapp-icon {
+        font-size: 1.2rem;
+    }
+}
+
+.visible {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}

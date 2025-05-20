@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moda Clara - Catálogo de Ropa para Hombre</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Barra de navegación principal -->
+    <nav class="main-nav">
+        <div class="container">
+            <div class="nav-categories">
+                <a href="/index.html" class="nav-link">INICIO</a>
+                <a href="#" class="nav-link">HOMBRE</a>
+                <a href="#" class="nav-link">MUJER</a>
+                <a href="#" class="nav-link">COSAS</a>
+                
+            </div>
+            
+            <div class="logo">
+                <h1>Altamar<span>®</span></h1>
+            </div>
+            
+            
+    </nav>
+    
+    <!-- Barra de categorías secundaria -->
+    <nav class="category-nav">
+        <div class="container">
+            <a href="#" class="category-link active" data-category="camisetas">CAMISETAS</a>
+            <a href="#" class="category-link" data-category="tanks">TANKS</a>
+            <a href="#" class="category-link" data-category="shorts">SHORTS</a>
+            <a href="#" class="category-link" data-category="buzos">BUZOS</a>
+            <a href="#" class="category-link" data-category="pantalones">PANTALONES</a>
+            <a href="#" class="category-link" data-category="joggers">JOGGERS</a>
+            <a href="#" class="category-link" data-category="jeans">JEANS</a>
+            <a href="#" class="category-link" data-category="camisas">CAMISAS</a>
+            <a href="#" class="category-link" data-category="gorras">GORRAS</a>
+            <a href="#" class="category-link" data-category="polos">POLOS</a>
+            <a href="#" class="category-link" data-category="medias">MEDIAS</a>
+            <a href="#" class="category-link" data-category="chaquetas">CHAQUETAS</a>
+        </div>
+    </nav>
+    
+    <!-- Menú móvil -->
+    <div class="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    
+    <div class="mobile-menu">
+        <div class="mobile-menu-header">
+            <div class="logo">
+                <h1>URBANMEN<span>®</span></h1>
+            </div>
+            <div class="close-menu">×</div>
+        </div>
+        <div class="mobile-menu-content">
+            <div class="mobile-main-nav">
+                <a href="#" class="nav-link">HOMBRE</a>
+                <a href="#" class="nav-link">MUJER</a>
+                <a href="#" class="nav-link">COSAS</a>
+                <a href="#" class="nav-link">TIENDAS</a>
+                <a href="#" class="nav-link highlight">SALE</a>
+            </div>
+            <div class="mobile-category-nav">
+                <a href="#" class="category-link active" data-category="camisetas">CAMISETAS</a>
+                <a href="#" class="category-link" data-category="tanks">TANKS</a>
+                <a href="#" class="category-link" data-category="shorts">SHORTS</a>
+                <a href="#" class="category-link" data-category="buzos">BUZOS</a>
+                <a href="#" class="category-link" data-category="pantalones">PANTALONES</a>
+                <a href="#" class="category-link" data-category="joggers">JOGGERS</a>
+                <a href="#" class="category-link" data-category="jeans">JEANS</a>
+                <a href="#" class="category-link" data-category="camisas">CAMISAS</a>
+                <a href="#" class="category-link" data-category="gorras">GORRAS</a>
+                <a href="#" class="category-link" data-category="polos">POLOS</a>
+                <a href="#" class="category-link" data-category="medias">MEDIAS</a>
+                <a href="#" class="category-link" data-category="chaquetas">CHAQUETAS</a>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Contenido principal -->
+    <main>
+        <div class="container">
+            <h2 class="page-title">ROPA PARA HOMBRE</h2>
+            
+            <!-- Categorías destacadas -->
+            <div class="featured-categories">
+                <div class="category-item">
+                    <img src="/img/7.png" alt="Cargo">
+                    <span class="category-name">CARGO</span>
+                </div>
+                <div class="category-item">
+                    <img src="/img/6.png" alt="Gráficos">
+                    <span class="category-name">GRÁFICOS</span>
+                </div>
+                <div class="category-item">
+                    <img src="/img/7.png" alt="Denim">
+                    <span class="category-name">DENIM</span>
+                </div>
+                <div class="category-item">
+                    <img src="/img/7.png" alt="Oversize">
+                    <span class="category-name">OVERSIZE</span>
+                </div>
+                <div class="category-item">
+                    <img src="/img/7.png" alt="Básicos">
+                    <span class="category-name">BÁSICOS</span>
+                </div>
+            </div>
+            
+            <!-- Filtros y visualización -->
+            <div class="filter-bar">
+                <div class="view-options">
+                    <span>VER</span>
+                    <div class="view-buttons">
+                        <button class="view-btn active"></button>
+                        <button class="view-btn"></button>
+                        <button class="view-btn"></button>
+                    </div>
+                </div>
+                <div class="filter-options">
+                    <button class="filter-btn">
+                        FILTRAR
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line></svg>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Secciones de productos -->
+            <section id="camisetas" class="product-section active">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/7.png" alt="Camiseta Básica Verde">
+                        </div>
+                        <div class="product-info">
+                            <h3>CAMISETA BÁSICA VERDE</h3>
+                            <p class="price">$45.000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/7.png" alt="Camiseta Gráfica Blanca">
+                        </div>
+                        <div class="product-info">
+                            <h3>CAMISETA GRÁFICA BLANCA</h3>
+                            <p class="price">$55.000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/7.png" alt="Camiseta Oversize Negra">
+                        </div>
+                        <div class="product-info">
+                            <h3>CAMISETA OVERSIZE NEGRA</h3>
+                            <p class="price">$48.000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="/img/7.png" alt="Camiseta Manga Corta">
+                        </div>
+                        <div class="product-info">
+                            <h3>CAMISETA MANGA CORTA</h3>
+                            <p class="price">$42.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tanks" class="product-section">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/f5f5f5/333?text=Tank+1" alt="Tank Top Básico">
+                        </div>
+                        <div class="product-info">
+                            <h3>TANK TOP BÁSICO</h3>
+                            <p class="price">$38.000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/f5f5f5/333?text=Tank+2" alt="Tank Top Oversize">
+                        </div>
+                        <div class="product-info">
+                            <h3>TANK TOP OVERSIZE</h3>
+                            <p class="price">$42.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="shorts" class="product-section">
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/f5f5f5/333?text=Shorts+1" alt="Shorts Cargo">
+                        </div>
+                        <div class="product-info">
+                            <h3>SHORTS CARGO NEGRO</h3>
+                            <p class="price">$65.000</p>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="https://via.placeholder.com/400x500/f5f5f5/333?text=Shorts+2" alt="Shorts Deportivos">
+                        </div>
+                        <div class="product-info">
+                            <h3>SHORTS DEPORTIVOS</h3>
+                            <p class="price">$55.000</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Otras secciones de productos (ocultas por defecto) -->
+            <section id="buzos" class="product-section">
+                <!-- Contenido de buzos -->
+            </section>
+            
+            <section id="pantalones" class="product-section">
+                <!-- Contenido de pantalones -->
+            </section>
+            
+            <section id="joggers" class="product-section">
+                <!-- Contenido de joggers -->
+            </section>
+            
+            <section id="jeans" class="product-section">
+                <!-- Contenido de jeans -->
+            </section>
+            
+            <section id="camisas" class="product-section">
+                <!-- Contenido de camisas -->
+            </section>
+            
+            <section id="gorras" class="product-section">
+                <!-- Contenido de gorras -->
+            </section>
+            
+            <section id="polos" class="product-section">
+                <!-- Contenido de polos -->
+            </section>
+            
+            <section id="medias" class="product-section">
+                <!-- Contenido de medias -->
+            </section>
+            
+            <section id="chaquetas" class="product-section">
+                <!-- Contenido de chaquetas -->
+            </section>
+        </div>
+    </main>
+    
+    <!-- Modal para detalles del producto -->
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img id="modal-product-image" src="https://via.placeholder.com/400x500/f5f5f5/333?text=Producto" alt="Producto">
+                </div>
+                <div class="modal-info">
+                    <h2 id="modal-product-name">NOMBRE DEL PRODUCTO</h2>
+                    <p id="modal-product-price" class="modal-price">$45.000</p>
+                    
+                    <div class="product-options">
+                        <div class="size-options">
+                            <h3>TALLA</h3>
+                            <div class="size-selector">
+                                <button class="size-btn">S</button>
+                                <button class="size-btn">M</button>
+                                <button class="size-btn">L</button>
+                                <button class="size-btn">XL</button>
+                            </div>
+                        </div>
+                        
+                        <div class="color-options">
+                            <h3>COLOR</h3>
+                            <div class="color-selector">
+                                <button class="color-btn" style="background-color: #000;"></button>
+                                <button class="color-btn" style="background-color: #2c4870;"></button>
+                                <button class="color-btn" style="background-color: #a83c3c;"></button>
+                            </div>
+                        </div>
+                        
+                        <div class="quantity-selector">
+                            <h3>CANTIDAD</h3>
+                            <div class="quantity-controls">
+                                <button id="decrease-quantity">-</button>
+                                <input type="number" id="quantity" value="1" min="1" max="10">
+                                <button id="increase-quantity">+</button>
+                            </div>
+                        </div>
+                        
+                        <button class="add-to-cart-btn">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h2>URBANMEN<span>®</span></h2>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>AYUDA</h3>
+                        <ul>
+                            <li><a href="#">Contacto</a></li>
+                            <li><a href="#">Preguntas frecuentes</a></li>
+                            <li><a href="#">Envíos</a></li>
+                            <li><a href="#">Devoluciones</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>INFORMACIÓN</h3>
+                        <ul>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#">Términos y condiciones</a></li>
+                            <li><a href="#">Política de privacidad</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>SÍGUENOS</h3>
+                        <div class="social-links">
+                            <a href="#" class="social-link">Instagram</a>
+                            <a href="#" class="social-link">Facebook</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 URBANMEN. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/static/Catalogo_H.js"></script>
+</body>
+</html>
